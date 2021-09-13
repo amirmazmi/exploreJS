@@ -1,0 +1,40 @@
+<html>
+
+<!--
+    ### METHOD 1 ###
+    set timer in content attribute
+    <meta http-equiv="refresh" content="5">
+-->
+
+
+    <h1>Auto refresh demo</h1>
+
+
+    <span id="timer">999</span>
+    <script>
+/*
+        // ### METHOD 2 ###
+        // shows countdown
+        var count=5;
+        var counter = setInterval(timer, 1000); // miliseconds
+
+        function timer() {
+            document.getElementById("timer").innerHTML=count + " secs";
+            count=count-1;
+            if (count <= 0) {
+                window.location.reload();
+                clearInterval(counter);
+            }
+        }
+*/
+
+/*
+        // ### METHOD 3 ###
+        window.setTimeout(function () {
+            window.location.reload();
+        }, 5000);
+*/
+    </script>
+
+
+</html>
